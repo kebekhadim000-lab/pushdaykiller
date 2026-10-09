@@ -24,95 +24,212 @@
     details[open] summary { margin-bottom: 6px; }
     details p, details ul, details ol { margin: 6px 0 0; }
     footer { margin-top: 36px; font-size: 13px; color: var(--muted); }
+    [hidden] { display: none; }
   </style>
 </head>
 <body>
   <p class="brand">PUSH DAY KILLER 💀</p>
-  <h1>Aide et contact</h1>
-  <p class="lead">Ta tête fait voler l'oiseau, chaque tuyau passé est une vraie pompe.</p>
 
-  <h2>Comment jouer</h2>
-  <ol>
-    <li>Pose ton iPhone au sol, calé contre un objet, caméra avant tournée vers toi, à environ un bras de distance.</li>
-    <li>Mets-toi en position de pompe, visage bien visible.</li>
-    <li>Fais une pompe pour lancer la partie : descends et remonte pour faire passer l'oiseau entre les tuyaux.</li>
-    <li>Chaque série d'au moins 5 pompes rapporte des points bonus, et un nouveau défi t'attend chaque jour.</li>
-  </ol>
+  <!-- French on a French device (or ?lang=fr), English everywhere else, like the app. -->
+  <article lang="fr">
+    <h1>Aide et contact</h1>
+    <p class="lead">Ta tête fait voler l'oiseau, chaque tuyau passé est une vraie pompe.</p>
 
-  <h2>Questions fréquentes</h2>
+    <h2>Comment jouer</h2>
+    <ol>
+      <li>Pose ton iPhone au sol, calé contre un objet, caméra avant tournée vers toi, à environ un bras de distance.</li>
+      <li>Mets-toi en position de pompe, visage bien visible.</li>
+      <li>Fais une pompe pour lancer la partie : descends et remonte pour faire passer l'oiseau entre les tuyaux.</li>
+      <li>Chaque série d'au moins 5 pompes rapporte des points bonus, et un nouveau défi t'attend chaque jour.</li>
+    </ol>
 
-  <details>
-    <summary>Mes pompes ne sont pas comptées</summary>
-    <ul>
-      <li>Garde tout ton visage dans l'image : si « Visage perdu » s'affiche, recule un peu le téléphone.</li>
-      <li>Mets-toi face à la lumière : un contre-jour (fenêtre derrière toi) gêne la détection.</li>
-      <li>Descends vraiment : une pompe compte quand ta tête descend puis remonte nettement.</li>
-      <li>Cale bien le téléphone : s'il bouge, c'est toute l'image qui bouge.</li>
-    </ul>
-  </details>
+    <h2>Questions fréquentes</h2>
 
-  <details>
-    <summary>Comment sont calculées les calories ?</summary>
-    <p>Seules les pompes vues par la caméra comptent. Pour chacune, la caméra mesure de combien ta tête descend : une
-      pompe complète brûle environ deux fois plus qu'une demi-pompe. Ton poids donne la charge soulevée (tes bras en
-      portent environ 69 %), et le temps tenu en position de planche s'y ajoute.</p>
-    <p>Ce sont des calories actives, en plus de ce que ton corps brûle au repos, comme l'anneau Bouger de l'Apple Watch.
-      C'est une estimation (±20 %) : pour qu'elle soit juste, indique ton poids dans Profil › Réglages.</p>
-  </details>
+    <details>
+      <summary>Mes pompes ne sont pas comptées</summary>
+      <ul>
+        <li>Garde tout ton visage dans l'image : si « Visage perdu » s'affiche, recule un peu le téléphone.</li>
+        <li>Mets-toi face à la lumière : un contre-jour (fenêtre derrière toi) gêne la détection.</li>
+        <li>Descends vraiment : une pompe compte quand ta tête descend puis remonte nettement.</li>
+        <li>Cale bien le téléphone : s'il bouge, c'est toute l'image qui bouge.</li>
+      </ul>
+    </details>
 
-  <details>
-    <summary>Envoyer mes séries dans l'app Santé</summary>
-    <p>Active Profil › Réglages › Apple Santé et autorise Push Day Killer. Chaque série devient alors un entraînement de
-      renforcement musculaire dans les apps Santé et Forme, avec ses calories actives. L'app écrit seulement : elle ne lit
-      rien dans Santé.</p>
-    <p>Tu as refusé par erreur ? Réglages › Santé › Accès aux données et appareils › Push Day Killer.</p>
-  </details>
+    <details>
+      <summary>Comment sont calculées les calories ?</summary>
+      <p>Seules les pompes vues par la caméra comptent. Pour chacune, la caméra mesure de combien ta tête descend : une
+        pompe complète brûle environ deux fois plus qu'une demi-pompe. Ton poids donne la charge soulevée (tes bras en
+        portent environ 69 %), et le temps tenu en position de planche s'y ajoute.</p>
+      <p>Ce sont des calories actives, en plus de ce que ton corps brûle au repos, comme l'anneau Bouger de l'Apple Watch.
+        C'est une estimation (±20 %) : pour qu'elle soit juste, indique ton poids dans Profil › Réglages.</p>
+    </details>
 
-  <details>
-    <summary>La caméra ne démarre pas</summary>
-    <p>Vérifie que Push Day Killer a accès à la caméra : Réglages › Confidentialité et sécurité › Caméra. Ferme les autres
-      apps qui utilisent la caméra, puis réessaie.</p>
-    <p>Si ton iPhone est en <b>mode Isolement</b>, ouvre Réglages › Confidentialité et sécurité › Mode Isolement ›
-      Configurer la navigation web, et désactive-le pour Push Day Killer seulement.</p>
-  </details>
+    <details>
+      <summary>Envoyer mes séries dans l'app Santé</summary>
+      <p>Active Profil › Réglages › Apple Santé et autorise Push Day Killer. Chaque série devient alors un entraînement de
+        renforcement musculaire dans les apps Santé et Forme, avec ses calories actives. L'app écrit seulement : elle ne lit
+        rien dans Santé.</p>
+      <p>Tu as refusé par erreur ? Réglages › Santé › Accès aux données et appareils › Push Day Killer.</p>
+    </details>
 
-  <details>
-    <summary>Recevoir un rappel chaque jour</summary>
-    <p>Choisis l'heure dans Profil › Réglages › Rappel du défi. Si rien n'arrive, autorise les notifications dans
-      Réglages › Push Day Killer › Notifications.</p>
-  </details>
+    <details>
+      <summary>La caméra ne démarre pas</summary>
+      <p>Vérifie que Push Day Killer a accès à la caméra : Réglages › Confidentialité et sécurité › Caméra. Ferme les autres
+        apps qui utilisent la caméra, puis réessaie.</p>
+      <p>Si ton iPhone est en <b>mode Isolement</b>, ouvre Réglages › Confidentialité et sécurité › Mode Isolement ›
+        Configurer la navigation web, et désactive-le pour Push Day Killer seulement.</p>
+    </details>
 
-  <details>
-    <summary>Je n'apparais pas dans le classement</summary>
-    <p>Le classement mondial est réservé aux membres Push Day Killer PRO. Tu y affrontes les joueurs de ta division :
-      tes points ne sont jamais remis à zéro et tu montes de division en franchissant des paliers. Sans PRO, l'app te
-      montre quand même la place que tu aurais.</p>
-  </details>
+    <details>
+      <summary>Recevoir un rappel chaque jour</summary>
+      <p>Choisis l'heure dans Profil › Réglages › Rappel du défi. Si rien n'arrive, autorise les notifications dans
+        Réglages › Push Day Killer › Notifications.</p>
+    </details>
 
-  <details>
-    <summary>Parrainer un ami</summary>
-    <p>Ton code de parrainage, c'est ton pseudo (Profil › Inviter un ami). Ton ami le saisit pendant l'accueil de l'app :
-      vous gagnez 200 points chacun.</p>
-  </details>
+    <details>
+      <summary>Changer la langue ou les unités</summary>
+      <p>L'app suit la langue de ton iPhone : en français si ton iPhone est en français, en anglais sinon. Tu peux la
+        changer dans Profil › Réglages › Langue, tout comme les unités (métrique ou impériales).</p>
+    </details>
 
-  <details>
-    <summary>Abonnement Push Day Killer PRO</summary>
-    <p>L'abonnement est géré par Apple. Pour l'annuler ou le modifier : Réglages › ton nom › Abonnements. Sur un nouvel
-      iPhone, touche « Restaurer les achats » dans le Profil de l'app.</p>
-  </details>
+    <details>
+      <summary>Je n'apparais pas dans le classement</summary>
+      <p>Le classement mondial est réservé aux membres Push Day Killer PRO. Tu y affrontes les joueurs de ta division :
+        tes points ne sont jamais remis à zéro et tu montes de division en franchissant des paliers. Sans PRO, l'app te
+        montre quand même la place que tu aurais.</p>
+    </details>
 
-  <details>
-    <summary>Changer d'iPhone ou effacer mes données</summary>
-    <p>Connecte-toi avec le même compte (Apple ou Google) pour retrouver ta progression sur un autre iPhone.
-      Pour tout effacer : Profil › Supprimer mes données.</p>
-  </details>
+    <details>
+      <summary>Parrainer un ami</summary>
+      <p>Ton code de parrainage, c'est ton pseudo (Profil › Inviter un ami). Ton ami le saisit pendant l'accueil de l'app :
+        vous gagnez 200 points chacun.</p>
+    </details>
 
-  <h2>Santé</h2>
-  <p>Arrête en cas de douleur ou de vertige. Si tu as un problème de santé, demande l'avis d'un médecin avant de commencer.</p>
+    <details>
+      <summary>Abonnement Push Day Killer PRO</summary>
+      <p>L'abonnement est géré par Apple. Pour l'annuler ou le modifier : Réglages › ton nom › Abonnements. Sur un nouvel
+        iPhone, touche « Restaurer les achats » dans le Profil de l'app.</p>
+    </details>
 
-  <h2>Contact</h2>
-  <p>Une question, un bug, une idée ? Écris-nous à <a href="mailto:kebekhadim000@gmail.com">kebekhadim000@gmail.com</a>.</p>
+    <details>
+      <summary>Changer d'iPhone ou effacer mes données</summary>
+      <p>Connecte-toi avec le même compte (Apple ou Google) pour retrouver ta progression sur un autre iPhone.
+        Pour tout effacer : Profil › Supprimer mes données.</p>
+    </details>
 
-  <footer><a href="privacy.html">Politique de confidentialité</a></footer>
+    <h2>Santé</h2>
+    <p>Arrête en cas de douleur ou de vertige. Si tu as un problème de santé, demande l'avis d'un médecin avant de commencer.</p>
+
+    <h2>Contact</h2>
+    <p>Une question, un bug, une idée ? Écris-nous à <a href="mailto:kebekhadim000@gmail.com">kebekhadim000@gmail.com</a>.</p>
+
+    <footer><a href="privacy.html?lang=fr">Politique de confidentialité</a> · <a href="?lang=en">English</a></footer>
+  </article>
+
+  <article lang="en" hidden>
+    <h1>Help and contact</h1>
+    <p class="lead">Your head flies the bird, every pipe you pass is a real push-up.</p>
+
+    <h2>How to play</h2>
+    <ol>
+      <li>Put your iPhone on the floor, propped against something, front camera facing you, about an arm’s length away.</li>
+      <li>Get into push-up position, face clearly visible.</li>
+      <li>Do one push-up to start the game: go down and back up to fly the bird between the pipes.</li>
+      <li>Every set of at least 5 push-ups earns bonus points, and a new challenge waits for you every day.</li>
+    </ol>
+
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>My push-ups are not counted</summary>
+      <ul>
+        <li>Keep your whole face in the frame: if “Face lost” shows up, move the phone back a little.</li>
+        <li>Face the light: backlight (a window behind you) gets in the way of the detection.</li>
+        <li>Really go down: a push-up counts when your head clearly goes down and comes back up.</li>
+        <li>Prop the phone firmly: if it moves, the whole image moves.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>How are calories worked out?</summary>
+      <p>Only push-ups seen by the camera count. For each one, the camera measures how far your head goes down: a full
+        push-up burns about twice as much as a half one. Your weight gives the load you lift (your arms carry about 69% of
+        it), and the time held in plank position is added.</p>
+      <p>These are active calories, on top of what your body burns at rest, like the Move ring of Apple Watch. It is an
+        estimate (±20%): to make it accurate, enter your weight in Profile › Settings.</p>
+    </details>
+
+    <details>
+      <summary>Send my sets to the Health app</summary>
+      <p>Turn on Profile › Settings › Apple Health and allow Push Day Killer. Every set then becomes a strength training
+        workout in the Health and Fitness apps, with its active calories. The app only writes: it reads nothing in Health.</p>
+      <p>Declined by mistake? Settings › Health › Data Access &amp; Devices › Push Day Killer.</p>
+    </details>
+
+    <details>
+      <summary>The camera does not start</summary>
+      <p>Check that Push Day Killer can use the camera: Settings › Privacy &amp; Security › Camera. Close the other apps that
+        use the camera, then try again.</p>
+      <p>If your iPhone is in <b>Lockdown Mode</b>, open Settings › Privacy &amp; Security › Lockdown Mode › Configure Web
+        Browsing, and turn it off for Push Day Killer only.</p>
+    </details>
+
+    <details>
+      <summary>Get a reminder every day</summary>
+      <p>Pick the time in Profile › Settings › Challenge reminder. If nothing arrives, allow notifications in
+        Settings › Push Day Killer › Notifications.</p>
+    </details>
+
+    <details>
+      <summary>Change the language or the units</summary>
+      <p>The app follows your iPhone's language: French if your iPhone is in French, English otherwise. You can change it in
+        Profile › Settings › Language, as well as the units (metric or imperial).</p>
+    </details>
+
+    <details>
+      <summary>I am not in the ranking</summary>
+      <p>The world ranking is for Push Day Killer PRO members. You compete with the players of your division: your points
+        never reset and you move up a division as you pass thresholds. Without PRO, the app still shows the place you would
+        have.</p>
+    </details>
+
+    <details>
+      <summary>Invite a friend</summary>
+      <p>Your referral code is your username (Profile › Invite a friend). Your friend enters it during the app's welcome
+        screens: you both get 200 points.</p>
+    </details>
+
+    <details>
+      <summary>Push Day Killer PRO subscription</summary>
+      <p>The subscription is managed by Apple. To cancel or change it: Settings › your name › Subscriptions. On a new
+        iPhone, tap “Restore purchases” in the app's Profile.</p>
+    </details>
+
+    <details>
+      <summary>Switch iPhones or erase my data</summary>
+      <p>Sign in with the same account (Apple or Google) to get your progress back on another iPhone. To erase everything:
+        Profile › Delete my data.</p>
+    </details>
+
+    <h2>Health</h2>
+    <p>Stop if you feel pain or dizziness. If you have a health condition, ask a doctor before you start.</p>
+
+    <h2>Contact</h2>
+    <p>A question, a bug, an idea? Write to us at <a href="mailto:kebekhadim000@gmail.com">kebekhadim000@gmail.com</a>.</p>
+
+    <footer><a href="privacy.html?lang=en">Privacy Policy</a> · <a href="?lang=fr">Français</a></footer>
+  </article>
+
+  <script>
+    const lang = new URLSearchParams(location.search).get('lang') || (/^fr\b/i.test(navigator.language) ? 'fr' : 'en');
+    const shown = lang === 'fr' ? 'fr' : 'en';
+    for (const a of document.querySelectorAll('article')) a.hidden = a.lang !== shown;
+    document.documentElement.lang = shown;
+    if (shown === 'en') {
+      document.title = 'Push Day Killer — Help';
+      document.querySelector('meta[name="description"]').content =
+        'Push Day Killer help: how to play, push-ups not counted, calories, Apple Health, camera, reminders, subscription, account and contact.';
+    }
+  </script>
 </body>
 </html>
