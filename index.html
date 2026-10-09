@@ -3,16 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
   <title>Push Day Killer — Aide</title>
+  <meta name="description" content="Aide de Push Day Killer : comment jouer, pompes non comptées, caméra, rappels, abonnement, compte et contact." />
   <style>
-    body { margin: 0 auto; max-width: 720px; padding: 28px 18px 48px; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: #1c1c1e; background: #fff; }
+    :root { --fg: #1c1c1e; --text: #3a3a3c; --muted: #8e8e93; --bg: #fff; --card: #f2f2f7; --link: #d97a00; }
+    @media (prefers-color-scheme: dark) { :root { --fg: #fff; --text: #d1d1d6; --muted: #98989f; --bg: #000; --card: #1c1c1e; --link: #ffb340; } }
+    body { margin: 0 auto; max-width: 720px; padding: 28px 18px 48px; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--fg); background: var(--bg); }
     h1 { font-size: 30px; margin: 0; letter-spacing: -0.5px; }
-    h2 { font-size: 18px; margin: 26px 0 6px; }
-    p, li { color: #3a3a3c; }
+    h2 { font-size: 20px; margin: 30px 0 8px; }
+    p, li { color: var(--text); }
+    ul, ol { padding-left: 22px; }
+    li + li { margin-top: 4px; }
+    b { color: var(--fg); }
     .brand { margin: 0 0 6px; font-size: 13px; font-weight: 800; letter-spacing: 0.2em; color: #ff9f0a; }
     .lead { margin-top: 6px; font-size: 17px; }
-    a { color: #d97a00; }
-    footer { margin-top: 36px; font-size: 13px; color: #8e8e93; }
+    a { color: var(--link); }
+    details { margin: 8px 0; padding: 12px 16px; border-radius: 14px; background: var(--card); }
+    summary { cursor: pointer; font-weight: 650; color: var(--fg); }
+    details[open] summary { margin-bottom: 6px; }
+    details p, details ul, details ol { margin: 6px 0 0; }
+    footer { margin-top: 36px; font-size: 13px; color: var(--muted); }
   </style>
 </head>
 <body>
@@ -25,19 +36,62 @@
     <li>Pose ton iPhone au sol, calé contre un objet, caméra avant tournée vers toi, à environ un bras de distance.</li>
     <li>Mets-toi en position de pompe, visage bien visible.</li>
     <li>Fais une pompe pour lancer la partie : descends et remonte pour faire passer l'oiseau entre les tuyaux.</li>
+    <li>Chaque série d'au moins 5 pompes rapporte des points bonus, et un nouveau défi t'attend chaque jour.</li>
   </ol>
 
-  <h2>La caméra ne démarre pas</h2>
-  <p>Vérifie que Push Day Killer a accès à la caméra : Réglages › Confidentialité et sécurité › Caméra. Ferme les autres
-    apps qui utilisent la caméra, puis réessaie.</p>
+  <h2>Questions fréquentes</h2>
 
-  <h2>Abonnement Push Day Killer PRO</h2>
-  <p>L'abonnement est géré par Apple. Pour l'annuler ou le modifier : Réglages › ton nom › Abonnements. Sur un nouvel
-    iPhone, touche « Restaurer les achats » dans le Profil de l'app.</p>
+  <details>
+    <summary>Mes pompes ne sont pas comptées</summary>
+    <ul>
+      <li>Garde tout ton visage dans l'image : si « Visage perdu » s'affiche, recule un peu le téléphone.</li>
+      <li>Mets-toi face à la lumière : un contre-jour (fenêtre derrière toi) gêne la détection.</li>
+      <li>Descends vraiment : une pompe compte quand ta tête descend puis remonte nettement.</li>
+      <li>Cale bien le téléphone : s'il bouge, c'est toute l'image qui bouge.</li>
+    </ul>
+  </details>
 
-  <h2>Compte et données</h2>
-  <p>Connecte-toi avec le même compte (Apple ou Google) pour retrouver ta progression sur un autre iPhone.
-    Pour tout effacer : Profil › Supprimer mes données.</p>
+  <details>
+    <summary>La caméra ne démarre pas</summary>
+    <p>Vérifie que Push Day Killer a accès à la caméra : Réglages › Confidentialité et sécurité › Caméra. Ferme les autres
+      apps qui utilisent la caméra, puis réessaie.</p>
+    <p>Si ton iPhone est en <b>mode Isolement</b>, ouvre Réglages › Confidentialité et sécurité › Mode Isolement ›
+      Configurer la navigation web, et désactive-le pour Push Day Killer seulement.</p>
+  </details>
+
+  <details>
+    <summary>Recevoir un rappel chaque jour</summary>
+    <p>Choisis l'heure dans Profil › Réglages › Rappel du défi. Si rien n'arrive, autorise les notifications dans
+      Réglages › Push Day Killer › Notifications.</p>
+  </details>
+
+  <details>
+    <summary>Je n'apparais pas dans le classement</summary>
+    <p>Le classement mondial est réservé aux membres Push Day Killer PRO. Tu y affrontes les joueurs de ta division :
+      tes points ne sont jamais remis à zéro et tu montes de division en franchissant des paliers. Sans PRO, l'app te
+      montre quand même la place que tu aurais.</p>
+  </details>
+
+  <details>
+    <summary>Parrainer un ami</summary>
+    <p>Ton code de parrainage, c'est ton pseudo (Profil › Inviter un ami). Ton ami le saisit pendant l'accueil de l'app :
+      vous gagnez 200 points chacun.</p>
+  </details>
+
+  <details>
+    <summary>Abonnement Push Day Killer PRO</summary>
+    <p>L'abonnement est géré par Apple. Pour l'annuler ou le modifier : Réglages › ton nom › Abonnements. Sur un nouvel
+      iPhone, touche « Restaurer les achats » dans le Profil de l'app.</p>
+  </details>
+
+  <details>
+    <summary>Changer d'iPhone ou effacer mes données</summary>
+    <p>Connecte-toi avec le même compte (Apple ou Google) pour retrouver ta progression sur un autre iPhone.
+      Pour tout effacer : Profil › Supprimer mes données.</p>
+  </details>
+
+  <h2>Santé</h2>
+  <p>Arrête en cas de douleur ou de vertige. Si tu as un problème de santé, demande l'avis d'un médecin avant de commencer.</p>
 
   <h2>Contact</h2>
   <p>Une question, un bug, une idée ? Écris-nous à <a href="mailto:kebekhadim000@gmail.com">kebekhadim000@gmail.com</a>.</p>
